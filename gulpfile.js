@@ -21,6 +21,7 @@ import {deleteAsync} from 'del';
 export const save = () => {
     return gulp.src([
         'source/less/**/*',
+        'source/css/**/*',
         'source/*.html'
     ], {
         base: 'source'
