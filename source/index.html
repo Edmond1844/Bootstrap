@@ -8,21 +8,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container-xl">
-        <h1 class="display-1 title">Bootstrap начало</h1>
-        <div class="container-sm wrapper">
-            <h2 class="display-6 subtitle">Запишитесь на расчёт стоимости проекта</h2>
-            <div class="d-flex wrapper">
-                <form class="row g-3 form-wrapper">
-                    <div class="col-auto">
-                        <label for="input" class="visually-hidden">Ваше имя</label>
-                        <input name="name" class="form-control wight" id="input" placeholder="Ваше имя">
-                        <label for="input" class="visually-hidden wight">Ваш номер</label>
-                        <input type="tel" class="form-control wight" id="input" placeholder="Ваш номер">
-                        <button type="submit" class="btn btn-primary mb-3 wight">Подтвердить личность</button>
-                    </div>
+    <div class="page text-bg-success">
+        <div class="page__container container-md text-bg-secondary">
+            <h1 class="page__title text-center text-white display-1">Bootstrap начало</h1>
+            <div class="page__wrapper text-center text-bg-light">
+                <form class="page__form-wrapper mx-auto col-auto">
+                    <label class="visually-hidden" for="input">Ваше имя</label>
+                    <input class="page__form-item form-control wight" name="name" id="input"  placeholder="Ваше имя">
+                    <label class="visually-hidden wight" for="input">Ваш номер</label>
+                    <input class=" page__form-item form-control wight" type="tel" maxlength="12" id="input" placeholder="Ваш номер">
+                    <button class="page__btn btn btn-success" type="submit">Оставить заявку на замер</button>
                 </form>
-                <img  src="./img/human-desktop.webp" alt="работник">
+                <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="./img/human-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/human-tablet.jpg">
+                    <img class="page__img-human img-fluid" width="332" height="442" src="./img/human-mobile.jpg" alt="специалист">
+                </picture>
             </div>
         </div>
     </div>
