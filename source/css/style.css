@@ -35,9 +35,31 @@ body {
 @media (min-width:768px) {
     .page__wrapper {
         display: flex;
+
+        column-gap: 25px;
     }
 
     .page__img-human {
         width: 434px;
     }
 }
+
+@media (min-width:992px) {
+    .page__form-item {
+        width: 380px;
+    }
+
+    .page__btn {
+        width: 380px;
+    }
+}
+
+@media (min-width:1200px) {
+    .page__form-item {
+        width: 430px;
+    }
+
+    .page__btn {
+        width: 430px;
+    }
+} 
