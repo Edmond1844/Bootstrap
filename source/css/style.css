@@ -2,6 +2,14 @@ body {
     min-width: 360px;
 }
 
+:root {
+    --red: #ff6347;
+}
+
+.red {
+    color: var(--red);
+}
+
 .page__container {
     padding: 55px 0;
 }
