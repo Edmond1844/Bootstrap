@@ -1,32 +1,24 @@
-// const gulp = require('gulp');
-
-// const save = (done) => {
-//     gulp.src([
-//         'source/less/**/*',
-//         'source/page.html'
-//     ], {
-//         base: 'source'
-//     })
-//         .pipe(gulp.dest('dist'));
-//     done();
-// };
-
-
-// exports.save = save
-
-
 import gulp from 'gulp';
-import {deleteAsync} from 'del';
+import sourcemaps from 'gulp-sourcemaps';
+import less from 'gulp-less';
+import { deleteAsync } from 'del';
+
+export const style = () => {
+    return gulp.src('source/less/style.less')
+        .pipe(sourcemaps.init())
+        .pipe(less())
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('source/css'));
+};
 
 export const save = () => {
     return gulp.src([
-        'source/less/**/*',
         'source/css/**/*',
         'source/*.html'
     ], {
         base: 'source'
     })
-        .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist'));
 };
 
 export const clean = () => {
@@ -34,5 +26,8 @@ export const clean = () => {
 };
 
 export default gulp.series(
-    clean, save
+    clean,
+    style,
+    save
 );
+
