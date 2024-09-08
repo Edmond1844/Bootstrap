@@ -1,5 +1,9 @@
 body {
-  background-color: goldenrod;
+  background-color: #bdbe7671;
+  min-width: 360px;
+}
+.title {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

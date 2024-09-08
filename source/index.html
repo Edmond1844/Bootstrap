@@ -1,53 +1,76 @@
-<!-- <!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="page text-bg-success">
-        <div class="page__container container-md text-bg-secondary">
-            <h1 class="page__title text-center text-white display-1">Bootstrap</h1>
-            <div class="page__wrapper text-center text-bg-light">
-                <form class="page__form-wrapper mx-auto col-auto">
-                    <label class="visually-hidden" for="input">Ваше имя</label>
-                    <input class="page__form-item form-control wight" name="name" id="input"  placeholder="Ваше имя">
-                    <label class="visually-hidden wight" for="input">Ваш номер</label>
-                    <input class=" page__form-item form-control wight" type="tel" maxlength="12" id="input" placeholder="Ваш номер">
-                    <button class="page__btn btn btn-success" type="submit">Оставить заявку на замер</button>
-                </form>
-                <picture>
-                    <source type="image/webp" media="(min-width: 1200px)" srcset="./img/human-desktop.webp">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/human-tablet.jpg">
-                    <img class="page__img-human img-fluid" width="332" height="442" src="./img/human-mobile.jpg" alt="специалист">
-                </picture>
-            </div>
-            <p class="red">Я красный текст</p>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
-    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Привет</h1>
     <div class="container">
-        <div class="row">
-            <div class="col">1</div>
-            <div class="col">2</div>
-            <div class="col">3</div>
+            <h1 class="text-center title">Сетки</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-xl-6 col-md-6 col-sm-12 col--orange">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae velit odio dolorem doloremque repudiandae inventore quasi sit commodi ea saepe. Laboriosam debitis rem quibusdam? Libero, nisi ullam. Laudantium, aspernatur quaerat?
+            </div>
+            <div class="col-xl-6 col-md-6 col-sm-12 col--yellow">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quaerat eos, fuga porro amet eligendi dolorem atque accusamus necessitatibus dolores cupiditate odio numquam earum qui assumenda mollitia facilis reiciendis hic.
+            </div>
+            <div class="col-xl-2 col-md-2 col--red">
+                <button type="button" class="btn btn-danger text-uppercase" data-bs-toggle="modal" data-bs-target="#order">Заказать</button>
+            </div>
+            <div class="col-xl-2 col-md-2 col--red">
+                <button type="button" class="btn btn-danger text-uppercase" data-bs-toggle="modal" data-bs-target="#info">Информация</button>
+            </div>
+        </div>       
+    </div>
+    <div class="modal fade " id="order" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Заказать</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dignissimos ducimus fugit ratione, itaque sint quae saepe sed asperiores numquam blanditiis odit ex alias aut? Repellat dolore rerum aliquid ut!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Информация</button>
+                    <button type="button" class="btn btn-primary">Сохранить изменения</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="info" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Заказать</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-5">
+                        <div class="col-12">
+                            <h6>Информация</h6>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti ipsa inventore provident consectetur illo vel eligendi asperiores est nemo esse!
+                        </div>
+                        <div class="col-12">
+                            <h6>Информация</h6>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti ipsa inventore provident consectetur illo vel eligendi asperiores est nemo esse!
+                        </div>
+                        <div class="col-12">
+                            <h6>Информация</h6>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti ipsa inventore provident consectetur illo vel eligendi asperiores est nemo esse!
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
