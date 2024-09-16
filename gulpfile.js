@@ -14,7 +14,8 @@ export const style = () => {
 export const save = () => {
     return gulp.src([
         'source/css/**/*',
-        'source/*.html'
+        'source/*.html',
+        'source/js/**/*'
     ], {
         base: 'source'
     })

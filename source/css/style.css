@@ -1,9 +1,38 @@
 body {
-  background-color: #bdbe7671;
+  background-color: #21275771;
   min-width: 360px;
 }
 .title {
   margin-bottom: 20px;
+}
+.form-control--border-color:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 0.25rem rgba(252, 247, 0, 0.25);
+}
+.form-control--password-border-color:focus {
+  border-color: #03fdd3;
+  box-shadow: 0 0 0 0.25rem rgba(191, 5, 197, 0.25);
+}
+.form-select--bg {
+  background-color: #fff;
+}
+.btn-primary--yellow {
+  background-color: #777703;
+  border-color: #777703;
+}
+.btn-primary--yellow:hover {
+  background-color: #c0cc19;
+  color: #000000;
+  border-color: #c0cc19;
+}
+.btn-primary--tomato {
+  background-color: tomato;
+  border-color: tomato;
+}
+.btn-primary--tomato:hover {
+  background-color: #8f3f11;
+  color: #000000;
+  border-color: #8f3f11;
 }
 
 /*# sourceMappingURL=style.css.map */

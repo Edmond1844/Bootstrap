@@ -10,69 +10,76 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-            <h1 class="text-center title">Сетки</h1>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-xl-6 col-md-6 col-sm-12 col--orange">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae velit odio dolorem doloremque repudiandae inventore quasi sit commodi ea saepe. Laboriosam debitis rem quibusdam? Libero, nisi ullam. Laudantium, aspernatur quaerat?
-            </div>
-            <div class="col-xl-6 col-md-6 col-sm-12 col--yellow">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quaerat eos, fuga porro amet eligendi dolorem atque accusamus necessitatibus dolores cupiditate odio numquam earum qui assumenda mollitia facilis reiciendis hic.
-            </div>
-            <div class="col-xl-2 col-md-2 col--red">
-                <button type="button" class="btn btn-danger text-uppercase" data-bs-toggle="modal" data-bs-target="#order">Заказать</button>
-            </div>
-            <div class="col-xl-2 col-md-2 col--red">
-                <button type="button" class="btn btn-danger text-uppercase" data-bs-toggle="modal" data-bs-target="#info">Информация</button>
-            </div>
-        </div>       
-    </div>
-    <div class="modal fade " id="order" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Заказать</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-                </div>
-                <div class="modal-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dignissimos ducimus fugit ratione, itaque sint quae saepe sed asperiores numquam blanditiis odit ex alias aut? Repellat dolore rerum aliquid ut!
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Информация</button>
-                    <button type="button" class="btn btn-primary">Сохранить изменения</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade " id="info" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Информация</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row g-5">
-                        <div class="col-12">
-                            <h6>Информация</h6>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti ipsa inventore provident consectetur illo vel eligendi asperiores est nemo esse!
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+                <form>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Адрес электронной почты</label>
+                                <input type="email" class="form-control form-control--border-color" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
                         </div>
-                        <div class="col-12">
-                            <h6>Информация</h6>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti ipsa inventore provident consectetur illo vel eligendi asperiores est nemo esse!
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                                <input type="password" class="form-control form-control--border-color" id="exampleInputPassword1">
+                            </div>
                         </div>
-                        <div class="col-12">
-                            <h6>Информация</h6>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti ipsa inventore provident consectetur illo vel eligendi asperiores est nemo esse!
+                        <div class="col-lg-6 col-md-6">
+                            <select class="form-select form-select--bg form-control--border-color" aria-label="Пример выбора">
+                                <option selected>Ваш город</option>
+                                <option value="1">Москва</option>
+                                <option value="2">Санкт-Петербург</option>
+                                <option value="3">Екатеринбург</option> 
+                            </select>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            1 флажок
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            2 флажок
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 ">
+                            <button type="submit" class="btn btn-primary w-100 mt-3">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-12 col-md-6">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus cupiditate, soluta distinctio dolorem animi impedit provident aut minus libero. Animi facere fuga quibusdam, autem laborum nobis quidem assumenda, vel omnis earum harum suscipit beatae error odit possimus quod, asperiores perspiciatis! Facere ipsam repellat quo.
+                    </div>
+                    <div class="col-lg-12 col-md-6">
+                        <div class="row">
+                            <div class="col-lg-6 ">
+                                <button type="submit" class="btn btn--active btn-primary btn-primary--yellow w-100 mt-3">Лайк</button>
+                            </div>
+                            <div class="col-lg-6">
+                                <button type="submit" class="btn btn-primary btn-primary--tomato w-100 mt-3">Дизлайк</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
+</html>   
