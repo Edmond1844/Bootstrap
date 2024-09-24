@@ -1,5 +1,5 @@
 body {
-  background-color: #21275771;
+  background-color: #dbf0ac71;
   min-width: 360px;
 }
 .title {
@@ -50,6 +50,9 @@ body {
   background-color: green;
   border: none;
   padding: 15px 15px;
+}
+.page {
+  background-color: tan;
 }
 
 /*# sourceMappingURL=style.css.map */

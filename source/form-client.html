@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-md-8 mx-auto">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Навигация</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active"  aria-current="page" href="form-client.html">Главная</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#maritalStatus">Семейное положение</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#whereLived">Где жили?</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#accommodationDetails">О проживании</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#parent">О родителях</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#work">О работе</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 col-md-8 mx-auto">            
+                <h1 class="text-center">Данные для ВНЖ</h1>
+                <p class="text-primary text-center"> Все данные заполняйте на латиннице как в загранпаспорте, по которому будете въезжать в страну</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 col-sm-8 mx-auto">
+                <form action="#">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-lg-8">
+                            <h3>Личные данные</h3>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
+                                    <label class="form-label" for="name" >Ваше имя</label>
+                                    <input class="form-control" id="name" type="text" required name="username">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
+                                    <label class="form-label" for="lastname" >Ваша фамилия</label>
+                                    <input class="form-control" id="lastname" type="text" required name="lastname">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-lg-4 pt-lg-5">
+                            <div class="row mb-4 ps-3 pt-lg-4">
+                                <div class="col-12 col-sm-12 col-md-6 form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="man">
+                                    <label class="form-check-label" for="man">
+                                        Мужчина
+                                    </label>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="woman" checked>
+                                    <label class="form-check-label" for="woman">
+                                        Женщина
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                            <label class="form-label" for="pasport">Номер загранпаспорта</label>
+                            <input class="form-control" id="pasport" type="number" required name="number" inputmode="numeric">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                            <label class="form-label" for="number-phone">Ваш номер телефона</label>
+                            <input class="form-control" id="number-phone" type="number" required name="number" inputmode="tel">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                            <label class="form-label" for="your-email">Ваша почта</label>
+                            <input class="form-control" id="your-email" type="email" required name="text" inputmode="email">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                            <label class="form-label" for="date-birth">Дата рождения</label>
+                            <input class="form-control" id="date-birth" type="date" required name="dob">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                            <label class="form-label" for="nationality">Национальность</label>
+                            <input class="form-control" id="nationality" type="text" required name="text">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                            <label class="form-label" for="country/birth">Страна роджения</label>
+                            <select class="form-select" id="country/birth" aria-label="Пример выбора" required> 
+                                <option selected></option>
+                                <option value="1">Россия</option>
+                                <option value="2">Казахстан</option>
+                                <option value="3">США</option> 
+                                <option value="4">Италия</option> 
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                            <label class="form-label" for="year/birth">Выберите год рождения</label>
+                            <select class="form-select" id="year/birth" required >
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-4 ps-4 ps-md-2" id="maritalStatus">
+                        <h3 class="mb-2 ps-0">Семейное положение</h3>
+                        <div class="col-12 col-sm-12 col-md-12 form-check">
+                            <input class="form-check-input" type="radio" name="marital-status" id="not-married">
+                            <label class="form-check-label mb-2" for="not-married">
+                                не женат
+                            </label>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 form-check">
+                            <input class="form-check-input" type="radio" name="marital-status" id="not-married-woman">
+                            <label class="form-check-label mb-2" for="not-married-woman">
+                                не замужем
+                            </label>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 form-check">
+                            <input class="form-check-input" type="radio" name="marital-status" id="married">
+                            <label class="form-check-label mb-2" for="married">
+                                женат
+                            </label>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 form-check">
+                            <input class="form-check-input" type="radio" name="marital-status" id="married-woman">
+                            <label class="form-check-label mb-2" for="married-woman">
+                                замужем
+                            </label>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 form-check">
+                            <input class="form-check-input" type="radio" name="marital-status" id="widower">
+                            <label class="form-check-label mb-2" for="widower">
+                                вдовец
+                            </label>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 form-check">
+                            <input class="form-check-input" type="radio" name="marital-status" id="widow">
+                            <label class="form-check-label mb-2" for="widow">
+                                вдова
+                            </label>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 form-check">
+                            <input class="form-check-input" type="radio" name="marital-status" id="living-together">
+                            <label class="form-check-label mb-5 mb-lg-0" for="living-together">
+                                Женаты, но не живем вместе
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 ">
+                        <h3 class="mb-1 ps-0">ВНЖ в Испании</h3>
+                        <p class="text-danger mb-1">Если у вас нет ВНЖ Испании, пропустите раздел</p>
+                        <p class="text-danger mb-1">Тип ВНЖ в Испании</p>
+                        <p class="text-danger mb-5">NIE</p>   
+                    </div>
+                    <div class="col-12 col-sm-12" id="whereLived">
+                        <h3 class="mb-2 ps-0">Где жили последние 2 года</h3>
+                        <p>Перечислите страны, в которых проживали в течение последних двух лет более, чем полгода</p>
+                        <textarea class="form-control resize mb-5" aria-label="С текстовым полем"></textarea>
+                    </div>
+                    <div class="col-12 col-sm-12" id="accommodationDetails">
+                        <h3 class="mb-2 ps-0">Данные о проживании</h3>
+                        <p>Укажите данные о гостинице, в которой остановитесь. название гостиницы не нужно. Если уже находитесь в Испании - укажите адрес проживания</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <label class="form-label mb-1" for="сountry">Страна</label>
+                            <input class="form-control mb-2" type="text" name="country" id="сountry">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <label class="form-label mb-1" for="street">Улица</label>
+                            <input class="form-control mb-2" type="text" name="street" id="street">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <label class="form-label" for="houseNumber">Номер дома и квартиры</label>
+                            <input class="form-control" type="text" name="houseNumber" id="houseNumber">
+                            <p class="text-danger">(для гостиницы достаточно номера дома)</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <label class="form-label mb-1" for="index">Индекс</label>
+                            <input class="form-control mb-2" type="text" name="index" id="index">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12">
+                            <label class="form-label mb-1" for="region">Регион</label>
+                            <input class="form-control mb-5" type="text" id="region" name="region"  list="regions">
+                            <datalist id="regions">
+                            <option value="Московская область">
+                            <option value="Санкт-Петербург">
+                            <option value="Новосибирская область">
+                            <!-- и другие регионы -->
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="row" id="parent">
+                        <div class="col-12 col-sm-12 col-md-6 mb-3">
+                            <h3 class="mb-2">Данные о родителях</h3>
+                            <label class="form-label" for="name-father" >Имя отца</label>
+                            <input class="form-control" id="name-father" type="text" required name="fatherName">
+                            <p class="text-danger">(только имя на латиннице)</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 mb-3">
+                            <label class="form-label" for="motherName" >Имя матери</label>
+                            <input class="form-control" id="motherName" type="text" required name="motherName">
+                            <p class="text-danger mb-5">(только имя на латиннице)</p>
+                        </div>
+                    </div>
+                    <div class="row" id="work">
+                        <h3 class="mb-2 ">Данные о работе</h3>
+                        <div class="col-12 col-sm-12 col-md-6 mb-3">
+                            <label class="form-label mb-0 mb-lg-1" for="companyName" >Название компании, на которую работаете </label>
+                            <input class="form-control" id="companyName" type="text" required name="companyName">
+                            <p class="text-danger">(на латиннице)</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 mb-3">
+                            <label class="form-label mb-4 mb-lg-1" for="monthlyIncome" >Доход в месяц в своей валюте</label>
+                            <input class="form-control" id="monthlyIncome" type="text" required name="monthlyIncome">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-md-12 col-lg-12 pb-5">
+                        <button type="submit" class="btn btn-primary w-100">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
